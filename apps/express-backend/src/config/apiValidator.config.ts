@@ -5,7 +5,7 @@ import * as dotenv from "dotenv";
 //  Defaults
 //
 
-const DEFAULT_API_SPEC_PATH = "./openapi.yml";
+const DEFAULT_API_SPEC_PATH = "../../openapi.yml";
 
 //
 //  Values
