@@ -2,7 +2,7 @@
 import { RequestHandler } from "express";
 
 const read: RequestHandler = async (req, res) => {
-  res.status(200).send("");
+  res.status(200).send("Hello World!");
 };
 
 export default {

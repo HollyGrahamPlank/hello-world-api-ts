@@ -10,11 +10,12 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
+    "@types/supertest": "^6.0.2",
+    "supertest": "^6.3.4",
     "tsx": "^4.7.1",
     "vitest": "^1.5.0"
   },
   "dependencies": {
-    "@hello-world-ts/shared": "workspace:*",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-openapi-validator": "^5.1.6"

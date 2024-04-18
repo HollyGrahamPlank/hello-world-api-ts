@@ -14,7 +14,9 @@ export interface RunAppArguments {
 }
 
 /** Constructs and begins running the application. */
-async function runApp(args: RunAppArguments): Promise<void> {
+async function runApp(
+  args: RunAppArguments,
+): Promise<{ app: express.Express; httpServer: http.Server }> {
   //
   //  Server
   //
@@ -59,6 +61,7 @@ async function runApp(args: RunAppArguments): Promise<void> {
   });
 
   console.log(`Server running on port ${usedPort}`);
+  return { app, httpServer };
 }
 
 export default runApp;
