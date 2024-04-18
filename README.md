@@ -25,5 +25,4 @@ You can test the whole project by running `pnpm test` in the root of the project
 ## Running express-backend
 
 - cd to `apps/express-backend`
-- Install deps with `pnpm install`
 - Run the app with `npm run start`
