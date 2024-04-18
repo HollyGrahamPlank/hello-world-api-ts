@@ -2,6 +2,7 @@ import express from "express";
 import * as http from "http";
 import { AddressInfo } from "net";
 import createOpenApiValidatorMiddleware from "./middleware/openApiValidator.middleware.js";
+import transmissionRouter from "./routes/index.routes.js";
 
 /** Arguments required for the application to run */
 export interface RunAppArguments {
@@ -28,6 +29,22 @@ async function runApp(args: RunAppArguments): Promise<void> {
 
   app.use(express.json());
   app.use(createOpenApiValidatorMiddleware(args.apiSpecPath));
+
+  //
+  //  Routes
+  //
+
+  app.use(transmissionRouter);
+
+  // Handle any errors from express and wrap them as JSON
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  app.use((err, req, res, next) => {
+    // Report a catch-all for any errors.
+    res.status(err.status || 500).json({
+      message: err.message,
+      errors: err.errors,
+    });
+  });
 
   //
   //  EXECUTE

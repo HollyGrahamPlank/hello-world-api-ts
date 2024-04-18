@@ -5,7 +5,7 @@ import * as dotenv from "dotenv";
 //  Defaults
 //
 
-const DEFAULT_HTTP_PORT = 3000;
+const DEFAULT_HTTP_PORT = 30330;
 
 //
 //  Values
