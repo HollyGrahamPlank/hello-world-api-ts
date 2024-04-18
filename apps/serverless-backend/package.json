@@ -3,7 +3,7 @@
   "license": "BOBBO-NET Friendly MIT License",
   "private": "true",
   "scripts": {
-    "dev": "serverless offline",
+    "dev": "serverless offline --useInProcess",
     "test": "vitest run",
     "test:watch": "vitest watch"
   },

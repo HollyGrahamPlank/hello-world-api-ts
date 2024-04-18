@@ -19,8 +19,8 @@ export const handler: APIGatewayProxyHandler = async (
   console.log("TODO");
 
   return {
-    statusCode: 200,
-    body: "test",
+    statusCode: 400,
+    body: JSON.stringify({ message: "Hello!" }),
   };
 };
 
