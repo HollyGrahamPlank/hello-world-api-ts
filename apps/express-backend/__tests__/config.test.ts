@@ -1,8 +1,9 @@
 import { expect, describe, it } from "vitest";
-import { HTTP_PORT } from "../src/config/http.config";
+import fs from "fs/promises";
+import { API_SPEC_PATH } from "../src/config/apiValidator.config";
 
-describe("the HTTP config", () => {
-  it("should resolve to a real file", () => {
-    expect(HTTP_PORT).toBeTruthy();
+describe("the API spec config", () => {
+  it("should resolve to a real file", async () => {
+    await expect(fs.access(API_SPEC_PATH, fs.constants.R_OK)).resolves.not.toThrow();
   });
 });
