@@ -1,5 +1,5 @@
 {
-  "name": "@hello-world/app",
+  "name": "@hello-world-ts/express-backend",
   "license": "BOBBO-NET Friendly MIT License",
   "private": "true",
   "scripts": {
@@ -9,9 +9,14 @@
     "test:watch": "vitest watch"
   },
   "devDependencies": {
-    "tsx": "^4.7.1"
+    "@types/express": "^4.17.21",
+    "tsx": "^4.7.1",
+    "vitest": "^1.5.0"
   },
   "dependencies": {
-    "@rename-me/shared-things": "workspace:*"
+    "@hello-world-ts/shared": "workspace:*",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-openapi-validator": "^5.1.6"
   }
 }
