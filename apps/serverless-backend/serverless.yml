@@ -1,0 +1,25 @@
+service: thingy
+frameworkVersion: "3"
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    httpPort: 30330
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  architecture: arm64
+  region: us-east-1
+  deploymentMethod: direct
+
+functions:
+  exampleEndpoint:
+    handler: src/handlers/index/get.handler
+    events:
+      - httpApi:
+          path: /
+          method: get

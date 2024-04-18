@@ -3,12 +3,14 @@
   "license": "BOBBO-NET Friendly MIT License",
   "private": "true",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "start": "tsx src/index.ts",
+    "dev": "serverless offline",
     "test": "vitest run",
     "test:watch": "vitest watch"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.137",
+    "serverless-offline": "^13.3.3",
+    "serverless-plugin-typescript": "^2.1.5",
     "tsx": "^4.7.1",
     "vitest": "^1.5.0"
   }
