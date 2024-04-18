@@ -55,17 +55,17 @@ importers:
         specifier: ^1.5.0
         version: 1.5.0
 
-  apps/hello-world:
+  apps/express-backend:
     dependencies:
-      '@rename-me/shared-things':
+      '@hello-world-ts/shared':
         specifier: workspace:*
-        version: link:../../packages/shared-things
+        version: link:../../packages/shared
     devDependencies:
       tsx:
         specifier: ^4.7.1
         version: 4.7.2
 
-  packages/shared-things:
+  packages/shared:
     devDependencies:
       rimraf:
         specifier: ~5.0.0

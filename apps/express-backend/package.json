@@ -1,5 +1,5 @@
 {
-  "name": "@hello-world/app",
+  "name": "@hello-world-ts/express-backend",
   "license": "BOBBO-NET Friendly MIT License",
   "private": "true",
   "scripts": {
@@ -12,6 +12,6 @@
     "tsx": "^4.7.1"
   },
   "dependencies": {
-    "@rename-me/shared-things": "workspace:*"
+    "@hello-world-ts/shared": "workspace:*"
   }
 }

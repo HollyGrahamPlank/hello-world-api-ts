@@ -1,4 +1,4 @@
-import someText from "@rename-me/shared-things";
+import someText from "@hello-world-ts/shared";
 
 const runApp = () => {
   console.log(someText);
