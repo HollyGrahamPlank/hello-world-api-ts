@@ -9,9 +9,13 @@
     "test:watch": "vitest watch"
   },
   "devDependencies": {
+    "@types/express": "^4.17.21",
     "tsx": "^4.7.1"
   },
   "dependencies": {
-    "@hello-world-ts/shared": "workspace:*"
+    "@hello-world-ts/shared": "workspace:*",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-openapi-validator": "^5.1.6"
   }
 }
