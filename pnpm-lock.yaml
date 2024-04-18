@@ -80,6 +80,15 @@ importers:
         specifier: ^1.5.0
         version: 1.5.0
 
+  apps/serverless-backend:
+    devDependencies:
+      tsx:
+        specifier: ^4.7.1
+        version: 4.7.2
+      vitest:
+        specifier: ^1.5.0
+        version: 1.5.0
+
 packages:
 
   /@aashutoshrathi/word-wrap@1.2.6:
