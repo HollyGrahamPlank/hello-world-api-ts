@@ -1,4 +1,3 @@
-import * as p from "prettier";
 import express from "express";
 import * as http from "http";
 import { AddressInfo } from "net";
